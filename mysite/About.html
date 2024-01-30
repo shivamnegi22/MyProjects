@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="test.js"></script>
+  </head>
+  <body>
+    <header>
+      My Website
+      <a href="https://www.upes.ac.in/" target="_blank">
+        <img class="Logo" src="images/upes-logo.png" alt="College Logo" />
+      </a>
+    </header>
+
+    <nav>
+      <ul class="main">
+        <li>
+          <a href="About.html">About</a>
+        </li>
+        <li>
+          <a href="Education.html">Education</a>
+        </li>
+        <li>
+          <a href="Gallery.html">Gallery</a>
+        </li>
+        <li style="float: right">
+          <a href="Contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <table>
+      <td>
+        <img id="myPic" src="images/profilePic.jpg" alt="Profile Pic" />
+      </td>
+      <td class="aboutMe">
+        <p>
+          <strong>Name:-</strong> Shivam Negi <br />
+          <strong>Collage:-</strong> UPES <br />
+          <strong>Sap Id:-</strong> 500080755 <br />
+          <strong> Course:-</strong>BCA - IOT <br />
+          <strong>Duration:-</strong> 2020-2023 <br />
+          My name is Shivam Negi and I live in Garhi Cantt,Dehradun,Uttarakhand. I
+          completed my schooling from ARMY PUBLIC SCHOOL BIRPUR. My expectation
+          from Front end Web application is that I'm hoping to learn something
+          new everyday and improve my skills.
+        </p>
+      </td>
+    </table>
+    <footer>
+      <p id="demo"></p>
+      <script>
+        var date = new Date();
+        var day = date.getDate();
+        var month = date.getMonth() + 1;
+        var year = date.getFullYear();
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        let dateAndTime =
+          day + "-" + month + "-" + year + " " + " " + hour + ":" + min + " ";
+        document.getElementById("demo").innerHTML = dateAndTime;
+      </script>
+
+      <a href="https://www.instagram.com/01_shivam_negi/?hl=en">
+        <img
+          class="Insta-Icon"
+          src="images/instaIcon.jpeg"
+          alt="Instagram icon"
+        />
+      </a>
+      <a href="https://www.linkedin.com/in/shivam-negi-1189ab22a/">
+        <img
+          class="Link-Icon"
+          src="images/linkdinIcon.jpeg"
+          alt="Linkedin icon"
+        />
+      </a>
+      <p class="footer">Visit me at :</p>
+    </footer>
+  </body>
+</html>
